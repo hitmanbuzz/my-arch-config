@@ -7,6 +7,7 @@
   "modules-left": ["custom/omarchy", "hyprland/workspaces"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
+    "memory",
     "group/tray-expander",
     "bluetooth",
     "network",
@@ -57,6 +58,21 @@
     "format": "󰍛",
     "on-click": "$TERMINAL -e btop"
   },
+
+  "memory": {
+    "format": " {icon} {used:0.1f}G/{total:0.1f}G ({0}%)",
+    "format-icons": {
+      "default": "",
+      "100": "",
+      "90": "",
+      "80": "",
+      "70": "",
+      "60": "",
+      "50": ""
+    },
+    "tooltip": false
+  },
+  
   "clock": {
     "format": "{:L%A %H:%M}",
     "format-alt": "{:L%d %B W%V %Y}",
